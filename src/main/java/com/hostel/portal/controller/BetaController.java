@@ -3,6 +3,7 @@ package com.hostel.portal.controller;
 import com.hostel.portal.entity.pass_related.Pass;
 import com.hostel.portal.model.PassModel;
 import com.hostel.portal.model.PassTokenModel;
+import com.hostel.portal.model.StudentPassTokenModel;
 import com.hostel.portal.service.BetaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -42,7 +43,7 @@ public class BetaController {
     }
 
     @GetMapping("/getToken/{email}")
-    public String getToken(@PathVariable("email") String email){
+    public StudentPassTokenModel getToken(@PathVariable("email") String email){
         return service.getToken(email);
     }
 }

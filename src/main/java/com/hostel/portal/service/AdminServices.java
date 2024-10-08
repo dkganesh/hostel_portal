@@ -193,7 +193,7 @@ public class AdminServices {
     public String updateStudentPassword(PasswordModel model) throws UserPrincipalNotFoundException {
         Student student = studentRepository.findByEmail(model.getEmail());
         if(student==null)
-            throw new UserPrincipalNotFoundException("No such sudent found ...");
+            throw new UserPrincipalNotFoundException("No such student found ...");
         student.setPassword(passwordEncoder.encode(model.getNewPassword()));
         studentRepository.save(student);
         return "Updated";

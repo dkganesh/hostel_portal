@@ -6,6 +6,7 @@ import com.hostel.portal.entity.Student;
 import com.hostel.portal.entity.pass_related.Pass;
 import com.hostel.portal.model.LoginModel;
 import com.hostel.portal.model.PassModel;
+import com.hostel.portal.model.StudentPassTokenModel;
 import com.hostel.portal.repository.StaffRepository;
 import com.hostel.portal.repository.StudentRepository;
 import com.hostel.portal.repository.pass_related.PassRepository;
@@ -99,13 +100,18 @@ public class BetaService {
                         .build()).toList();
     }
 
-    public String getToken(String email) {
+    public StudentPassTokenModel getToken(String email) {
+        StudentPassTokenModel model =new StudentPassTokenModel();
         Student s=studentRepository.findByEmail(email);
         List<Pass> passes = passRepository.findByStudent(s);
 //        System.out.println(passes);
         for(int i=passes.size()-1;i>=0;i--){
-            if(passes.get(i).isApproved())return passes.get(i).getToken();
+            if(passes.get(i).isApproved()){
+                model.setToken(passes.get(i).getToken());
+                model.setDate(String.valueOf(passes.get(i).getStartDate()));
+//                return model;
+            }
         }
-        return null;
+        return model;
     }
 }
