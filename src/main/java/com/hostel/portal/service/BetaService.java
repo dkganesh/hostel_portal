@@ -103,6 +103,9 @@ public class BetaService {
         Student s=studentRepository.findByEmail(email);
         List<Pass> passes = passRepository.findByStudent(s);
 //        System.out.println(passes);
-        return passes.get(passes.size()-1).getToken();
+        for(int i=passes.size()-1;i>=0;i--){
+            if(passes.get(i).isApproved())return passes.get(i).getToken();
+        }
+        return null;
     }
 }
