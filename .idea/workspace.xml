@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="383abcdd-a13f-4e04-92db-72c45912bbf3" name="Changes" comment="hh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/controller/BetaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/controller/BetaController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/service/AdminServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/service/AdminServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/service/BetaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/service/BetaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/config/Default_Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/config/Default_Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/service/ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/service/ServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hostel/portal/service/ServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hostel/portal/service/ServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

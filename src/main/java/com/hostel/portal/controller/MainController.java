@@ -31,7 +31,7 @@ public class MainController {
 
     @GetMapping("/")
     public String Empty(){
-        return "Hi This is Empty...";
+        return "Awake api...";
     }
     @GetMapping("/hello")
     public String helloApi(){

@@ -103,7 +103,7 @@ public class ServiceImpl implements Services{
                 log.info("jwt token is updated in DB...");
                 return token;
             }
-            else throw new AuthenticationCredentialsNotFoundException("from verifylogin method no such sudent present");
+            else throw new AuthenticationCredentialsNotFoundException("from verify login method no such student present");
         }
     @Override
     public String verifyLoginStaff(LoginModel model) {
@@ -133,7 +133,7 @@ public class ServiceImpl implements Services{
                 log.info("jwt token is updated in DB...");
                 return token;
             }
-            else throw new AuthenticationCredentialsNotFoundException("from verifylogin method no such staff present");
+            else throw new AuthenticationCredentialsNotFoundException("from verify login method no such staff present");
         }
 
     @Override
