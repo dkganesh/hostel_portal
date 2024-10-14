@@ -29,7 +29,7 @@ import java.util.Arrays;
 @EnableWebSecurity
 public class Default_Config {
     private final static String[] WHITE_LIST_URL={"/login","/staffLogin",
-            "/std/register","/","/std/verifyRegistration"
+            "/std/register","/","/std/verifyRegistration","/admin/shutdown-server"
             };
 //    "/beta","/beta/issuePass","/beta/verifyPass"
 

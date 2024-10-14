@@ -4,6 +4,9 @@ import com.hostel.portal.model.*;
 import com.hostel.portal.service.AdminServices;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.ExitCodeGenerator;
+import org.springframework.boot.SpringApplication;
+import org.springframework.context.ApplicationContext;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +20,8 @@ import java.util.List;
 public class AdminController {
     @Autowired
     private AdminServices adminService;
-
+    @Autowired
+    private ApplicationContext context;
 
 
     @DeleteMapping("/delete/std/{email}")
@@ -91,4 +95,10 @@ public class AdminController {
         return adminService.getStaffFromEmail(email);
     }
 
+
+    @GetMapping("/shutdown-server")
+    public void shutdownApp() {
+        int exitCode = SpringApplication.exit(context, (ExitCodeGenerator) () -> 0);
+        System.exit(exitCode);
+    }
 }
