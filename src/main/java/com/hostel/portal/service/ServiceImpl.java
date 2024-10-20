@@ -77,7 +77,7 @@ public class ServiceImpl implements Services{
 
     @Override
     public String verifyLogin(LoginModel model) {
-        System.out.println(3);
+//        System.out.println(3);
             Authentication authentication =authManager.authenticate(new UsernamePasswordAuthenticationToken(
                     model.getEmail(),model.getPassword()
             ));
