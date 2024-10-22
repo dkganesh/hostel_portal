@@ -229,17 +229,13 @@ public class AdminServices {
 
     public List<StaffModel> getRt() {
         return staffRepository.findAll().stream().map(e->
-                StaffModel.builder()
-                        .id(e.getId())
-                        .name(e.getName())
-                        .build()
+                new StaffModel(e.getId(),e.getName())
         ).collect(Collectors.toList());
     }
 
     public List<DepartmentModel> geDepartment() {
         return departmentRepository.findAll().stream().map(e->
-            DepartmentModel.builder()
-                    .departmentName(e.getDepartmentName()).build()
+            new DepartmentModel(e.getDepartmentName())
         ).collect(Collectors.toList());
     }
 }
