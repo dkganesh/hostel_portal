@@ -18,7 +18,7 @@ import java.util.List;
         columnNames = "email"
 ))
 //@ToString(exclude = {"staff","department","block","room"})
-@ToString(exclude = {"passes"})
+//@ToString(exclude = {"passes"})
 public class Student {
 
     @Id
