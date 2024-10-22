@@ -1,5 +1,6 @@
 package com.hostel.portal.controller;
 
+import com.hostel.portal.entity.Department;
 import com.hostel.portal.model.*;
 import com.hostel.portal.service.AdminServices;
 import lombok.extern.slf4j.Slf4j;
@@ -100,5 +101,18 @@ public class AdminController {
     public void shutdownApp() {
         int exitCode = SpringApplication.exit(context, (ExitCodeGenerator) () -> 0);
         System.exit(exitCode);
+    }
+
+    @GetMapping("/getBlocks")
+    public List<BlockModel> getBlocks(){
+        return adminService.getBlocks();
+    }
+    @GetMapping("/getRt")
+    public List<StaffModel> getRt(){
+        return adminService.getRt();
+    }
+    @GetMapping("/getDepartment")
+    public List<DepartmentModel> geDepartment(){
+        return adminService.geDepartment();
     }
 }

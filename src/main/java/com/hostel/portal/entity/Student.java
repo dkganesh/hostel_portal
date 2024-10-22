@@ -18,6 +18,7 @@ import java.util.List;
         columnNames = "email"
 ))
 //@ToString(exclude = {"staff","department","block","room"})
+@ToString(exclude = {"passes"})
 public class Student {
 
     @Id
@@ -50,7 +51,7 @@ public class Student {
     private boolean enabled=false;
 
     @JsonIgnore
-    @OneToMany(mappedBy = "student",cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "student",cascade = CascadeType.ALL,fetch = FetchType.LAZY,orphanRemoval = true)
     private List<Pass> passes=new ArrayList<>();
 
 }

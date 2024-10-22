@@ -13,7 +13,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@ToString(exclude = "students")
+@ToString(exclude = {"students","passList"})
 public class Staff {
 
     @Id

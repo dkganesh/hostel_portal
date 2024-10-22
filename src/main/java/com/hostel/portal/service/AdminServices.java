@@ -1,6 +1,7 @@
 package com.hostel.portal.service;
 
 import com.hostel.portal.entity.*;
+import com.hostel.portal.entity.token.JwtToken;
 import com.hostel.portal.model.*;
 import com.hostel.portal.repository.*;
 import jakarta.servlet.http.HttpServletRequest;
@@ -30,6 +31,8 @@ public class AdminServices {
     private PasswordEncoder passwordEncoder;
     @Autowired
     private RoomRepository roomRepository;
+    @Autowired
+    private JwtTokenRepository jwtTokenRepository;
 
     private Student findStudentByEmail(String email){
         return studentRepository.findByEmail(email);
@@ -37,6 +40,11 @@ public class AdminServices {
 
     public boolean deleteStudentByemail(String email) {
         Student student = findStudentByEmail(email);
+        JwtToken token = jwtTokenRepository.findByStudent(student);
+        if(token!=null){
+            jwtTokenRepository.delete(token);
+            log.info("deleted jwt token of the user");
+        }
         if(student==null){
             log.info("Student not Available");
             return false;
@@ -210,5 +218,28 @@ public class AdminServices {
                 .build();
         blockRepository.save(b);
         return "Added";
+    }
+
+    public List<BlockModel> getBlocks() {
+        return blockRepository.findAll().stream().map((e)->
+                new BlockModel(
+                  e.getBlockName(), Math.toIntExact(e.getId())
+                )).collect(Collectors.toList());
+    }
+
+    public List<StaffModel> getRt() {
+        return staffRepository.findAll().stream().map(e->
+                StaffModel.builder()
+                        .id(e.getId())
+                        .name(e.getName())
+                        .build()
+        ).collect(Collectors.toList());
+    }
+
+    public List<DepartmentModel> geDepartment() {
+        return departmentRepository.findAll().stream().map(e->
+            DepartmentModel.builder()
+                    .departmentName(e.getDepartmentName()).build()
+        ).collect(Collectors.toList());
     }
 }

@@ -5,9 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="383abcdd-a13f-4e04-92db-72c45912bbf3" name="Changes" comment="hh">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/config/JwtTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/config/JwtTokenFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/service/ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/service/ServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/config/Default_Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/config/Default_Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/config/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/config/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/entity/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/entity/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/entity/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/model/BlockModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/model/BlockModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/model/LoginModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/model/LoginModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/model/StaffModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/model/StaffModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/hostel/portal/service/AdminServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/hostel/portal/service/AdminServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hostel/portal/config/JwtTokenFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hostel/portal/config/JwtTokenFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hostel/portal/config/UserDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hostel/portal/config/UserDetailsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hostel/portal/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hostel/portal/controller/AdminController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hostel/portal/entity/Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hostel/portal/entity/Student.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hostel/portal/model/BlockModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hostel/portal/model/BlockModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hostel/portal/model/LoginModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hostel/portal/model/LoginModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hostel/portal/service/AdminServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hostel/portal/service/AdminServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/hostel/portal/service/ServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/hostel/portal/service/ServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -52,38 +69,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.ENV-PortalApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PortalApplication.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminServicesTest.check_get_stduents_from_room.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminServicesTest.check_get_stduents_of_dept.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminServicesTest.check_get_student_by_email.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminServicesTest.check_get_students_from_room.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminServicesTest.check_get_students_of_block.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminServicesTest.generate_hash_Pass.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminServicesTest.getall_students_from_room.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AdminServicesTest.getall_students_from_studentclass.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BlockRepositoryTest.custom_query.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BlockRepositoryTest.dk_block_getall.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BlockRepositoryTest.dk_block_insert_basic.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.BlockRepositoryTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.DepartmentRepositoryTest.dk_insert_dept_basic.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StaffRepositoryTest.dk_get_all_staffs.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StudentRepositoryTest.dk_student_insert_test_basic.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StudentRepositoryTest.get_student_by_email.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.StudentRepositoryTest.get_students_by_room.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/GANESAMOORTHY K/Documents/phase1 hostel portal/backend/portal&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.ENV-PortalApplication.executor": "Run",
+    "Application.PortalApplication.executor": "Run",
+    "JUnit.AdminServicesTest.check_get_stduents_from_room.executor": "Run",
+    "JUnit.AdminServicesTest.check_get_stduents_of_dept.executor": "Run",
+    "JUnit.AdminServicesTest.check_get_student_by_email.executor": "Run",
+    "JUnit.AdminServicesTest.check_get_students_from_room.executor": "Run",
+    "JUnit.AdminServicesTest.check_get_students_of_block.executor": "Run",
+    "JUnit.AdminServicesTest.generate_hash_Pass.executor": "Run",
+    "JUnit.AdminServicesTest.getall_students_from_room.executor": "Run",
+    "JUnit.AdminServicesTest.getall_students_from_studentclass.executor": "Run",
+    "JUnit.BlockRepositoryTest.custom_query.executor": "Run",
+    "JUnit.BlockRepositoryTest.dk_block_getall.executor": "Run",
+    "JUnit.BlockRepositoryTest.dk_block_insert_basic.executor": "Run",
+    "JUnit.BlockRepositoryTest.executor": "Run",
+    "JUnit.BlockRepositoryTest.getallblock.executor": "Run",
+    "JUnit.BlockRepositoryTest.getallstaff.executor": "Run",
+    "JUnit.BlockRepositoryTest.getallstd.executor": "Run",
+    "JUnit.DepartmentRepositoryTest.dk_insert_dept_basic.executor": "Run",
+    "JUnit.StaffRepositoryTest.dk_get_all_staffs.executor": "Run",
+    "JUnit.StudentRepositoryTest.dk_student_insert_test_basic.executor": "Run",
+    "JUnit.StudentRepositoryTest.get_student_by_email.executor": "Run",
+    "JUnit.StudentRepositoryTest.get_students_by_room.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/GANESAMOORTHY K/Documents/Dart",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.hostel.portal.config" />
@@ -128,54 +148,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AdminServicesTest.check_get_student_by_email" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="portal" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hostel.portal.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hostel.portal.service" />
-      <option name="MAIN_CLASS_NAME" value="com.hostel.portal.service.AdminServicesTest" />
-      <option name="METHOD_NAME" value="check_get_student_by_email" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AdminServicesTest.check_get_students_from_room" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="portal" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hostel.portal.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hostel.portal.service" />
-      <option name="MAIN_CLASS_NAME" value="com.hostel.portal.service.AdminServicesTest" />
-      <option name="METHOD_NAME" value="check_get_students_from_room" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AdminServicesTest.check_get_students_of_block" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="portal" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hostel.portal.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.hostel.portal.service" />
-      <option name="MAIN_CLASS_NAME" value="com.hostel.portal.service.AdminServicesTest" />
-      <option name="METHOD_NAME" value="check_get_students_of_block" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BlockRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="portal" />
       <extension name="coverage">
@@ -208,22 +180,70 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BlockRepositoryTest.getallblock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="portal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hostel.portal.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hostel.portal.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.hostel.portal.repository.BlockRepositoryTest" />
+      <option name="METHOD_NAME" value="getallblock" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlockRepositoryTest.getallstaff" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="portal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hostel.portal.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hostel.portal.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.hostel.portal.repository.BlockRepositoryTest" />
+      <option name="METHOD_NAME" value="getallstaff" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlockRepositoryTest.getallstd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="portal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hostel.portal.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hostel.portal.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.hostel.portal.repository.BlockRepositoryTest" />
+      <option name="METHOD_NAME" value="getallstd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.PortalApplication" />
       <item itemvalue="Application.ENV-PortalApplication" />
-      <item itemvalue="JUnit.AdminServicesTest.check_get_student_by_email" />
-      <item itemvalue="JUnit.AdminServicesTest.check_get_students_from_room" />
-      <item itemvalue="JUnit.AdminServicesTest.check_get_students_of_block" />
+      <item itemvalue="Application.PortalApplication" />
+      <item itemvalue="JUnit.BlockRepositoryTest.getallstaff" />
+      <item itemvalue="JUnit.BlockRepositoryTest.getallstd" />
+      <item itemvalue="JUnit.BlockRepositoryTest.getallblock" />
       <item itemvalue="JUnit.BlockRepositoryTest" />
       <item itemvalue="JUnit.BlockRepositoryTest.custom_query" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BlockRepositoryTest.getallstaff" />
+        <item itemvalue="JUnit.BlockRepositoryTest.getallstd" />
+        <item itemvalue="JUnit.BlockRepositoryTest.getallblock" />
         <item itemvalue="JUnit.BlockRepositoryTest.custom_query" />
         <item itemvalue="JUnit.BlockRepositoryTest" />
-        <item itemvalue="JUnit.AdminServicesTest.check_get_student_by_email" />
-        <item itemvalue="JUnit.AdminServicesTest.check_get_students_of_block" />
-        <item itemvalue="JUnit.AdminServicesTest.check_get_students_from_room" />
       </list>
     </recent_temporary>
   </component>
